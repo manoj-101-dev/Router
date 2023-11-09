@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-// AllCourses.js
 import React from "react";
 import CyberSecurity from "./CyberSecurity";
 import DataScience from "./DataScience";

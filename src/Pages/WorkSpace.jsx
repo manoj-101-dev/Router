@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-
+/* eslint-disable react-refresh/only-export-components */
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -7,13 +6,13 @@ function Workspace() {
   const navigate = useNavigate();
   return (
     <div className="flex justify-center items-center">
-      <div className="grid grid-cols-4 gap-4 ">
+      <div className="grid grid-cols-4 gap-4">
         <button onClick={() => navigate("/all")} className="tab tab-bordered">
           All Courses
         </button>
         <button
           onClick={() => navigate("/cyber-security")}
-          className="tab tab-bordered tab-active "
+          className="tab tab-bordered tab-active"
         >
           Cyber Security
         </button>
@@ -34,4 +33,4 @@ function Workspace() {
   );
 }
 
-export default Workspace;
+export default React.memo(Workspace);

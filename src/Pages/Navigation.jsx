@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Navigation() {
+  console.log("Navigation rendered");
+
   return (
     <div className="grid grid-cols-4 gap-4 mt-20">
       <Link to="/all" className="tab tab-bordered">
