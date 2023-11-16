@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
+// App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Workspace from "./Pages/WorkSpace";
+import { Routes, Route } from "react-router-dom";
+
 import DataScience from "./Pages/DataScience";
 import Navigation from "./Pages/Navigation";
 import AllCourses from "./Pages/AllCourses";
@@ -12,16 +13,13 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Workspace />} />
-          <Route path="/data-science" element={<DataScience />} />
-          <Route path="/all" element={<AllCourses />} />
-          <Route path="/cyber-security" element={<CyberSecurity />} />
-          <Route path="/full-stack" element={<FullStackDevelopment />} />
-        </Routes>
-      </Router>
+      <Navigation />
+      <Routes>
+        <Route path="data-science" element={<DataScience />} />
+        <Route path="all" element={<AllCourses />} />
+        <Route path="cyber-security" element={<CyberSecurity />} />
+        <Route path="full-stack" element={<FullStackDevelopment />} />
+      </Routes>
     </div>
   );
 }
