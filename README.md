@@ -1,8 +1,14 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app is a router that navigates the diferent types of courses. If you click on any course it will navigate to that course of new page
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## To Run the Apllication
+
+In the command prompt or powershell use the command
+
+`npm run dev`
+
+To view the live site of the app click the beolw link.
+
+- [@Live-site](https://router-wine-two.vercel.app/)
